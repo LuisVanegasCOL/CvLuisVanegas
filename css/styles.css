@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Subcontenedores */
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: #ffffff; padding: 30px;
+  
+ 
+}
+
+/* Secciones */
+.infocontact,
+.educacion,
+.habilidades,
+.idiomas {
+    align-self: stretch;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+
+/* Imagen de perfil */
+.contactdata img {
+    align-self: center;
+    margin-top: 0;
+    border-radius: 50%;
+    border: 3px solid #374247;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Enlace LinkedIn */
+.contactdata a {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactdata a:hover {
+    text-decoration: underline;
+}
+
+/* Tipografía y títulos */
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Texto principal */
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Línea divisoria */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .subcontainer {
+        padding: 20px;
+    }
+
+    .contactdata img {
+        width: 140px;
+        height: 140px;
+    }
+}
